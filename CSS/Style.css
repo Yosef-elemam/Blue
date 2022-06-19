@@ -1,0 +1,199 @@
+/* Start Variables */
+:root {
+    --main-color: #ffffff;
+    --Socend-color: #68328e;
+    --text-color: #bf2c42;
+    --third-color: #f42267;
+    --back-ground: #484848;
+    --section-padding: 50px;
+    --main-duration: 0.5s;
+    --trns-color: #24242465;
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Rubik";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif, "Changa";
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* Start Header */
+Header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    padding-top: 20px;
+}
+
+Header .container {
+    display: flex;
+    align-items: center;
+}
+
+Header .container .logo {
+    width: 200px;
+}
+
+Header .container .logo img {
+    width: 100%;
+}
+
+Header .container nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+Header .container nav ul {
+    display: flex;
+}
+
+Header .container nav ul li {
+    margin: 20px;
+    color: var(--main-color);
+}
+
+Header .container nav ul li a {
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: var(--main-duration);
+}
+Header .container nav ul li a:hover{
+    color: var(--third-color);
+}
+Header .container nav ul .active {
+    color: var(--third-color);
+}
+/* End Header */
+/* Start Landing */
+.landing {
+    min-height: 100vh;
+    background-image: url(../images/background-1.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.landing .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(196, 40, 65);
+    background: linear-gradient(41deg, rgba(196, 40, 65, 0.9360119047619048) 33%, rgba(44, 30, 85, 0.8267682072829132) 45%);
+}
+
+.landing .container {
+    z-index: 3;
+}
+
+.landing .container .intro-text {
+    color: var(--main-color);
+
+}
+
+.landing .container .intro-text h4 {
+    font-size: 21pt;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.landing .container .intro-text h1 {
+    font-size: 54px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.landing .container .intro-text h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.landing .container .bottuns {
+    margin-top: 60px;
+}
+
+.landing .container .bottuns a {
+    color: var(--main-color);
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 30px;
+    margin-left: 20px;
+    text-shadow: 0px 1px 0px #3d768a;
+    transition: 2s;
+}
+.landing .container .bottuns a:hover{
+    
+}
+.landing .container .bottuns a:first-child {
+    background-color: var(--third-color);
+}
+
+.landing .container .bottuns a:last-child {
+    background-color: var(--Socend-color);
+}
+
+.landing .container .image {
+    position: absolute;
+    left: 80%;
+    top: 15%;
+    transform: translateX(-50%);
+
+}
+
+
+/* End Landing */
